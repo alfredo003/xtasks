@@ -1,14 +1,19 @@
 NAME = xtasks
 CC = c++
 FLAGS = -Wall  -Wextra -Werror
-SRCS = main.cpp
+SRCS = src/main.cpp\
+	src/Milestone.cpp
 RM = rm -rf
-OBJS = $(SRCS.cpp=.o)
+OBJS = $(SRCS:.cpp=.o)
 
 all: $(NAME)
 
-$(NAME):
+$(NAME): $(OBJS)
 	$(CC) $(FLAGS) $(OBJS) -o $(NAME)
+
+%.o:%.cpp
+	@$(CC) $(FLAGS) -c $< -o $@
+
 clean:
 	$(RM) $(OBJS)
 

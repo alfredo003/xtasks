@@ -8,7 +8,7 @@ class Task
         Milestone &milistone;
         std::string description;
     public:
-
+        void add( Milestone &milistone,std::string description);
 };
 
 #endif
