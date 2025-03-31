@@ -2,7 +2,8 @@ NAME = xtasks
 CC = c++
 FLAGS = -Wall  -Wextra -Werror
 SRCS = src/main.cpp\
-	src/Milestone.cpp
+		src/Task.cpp\
+		src/Milestone.cpp
 RM = rm -rf
 OBJS = $(SRCS:.cpp=.o)
 

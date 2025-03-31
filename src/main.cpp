@@ -1,4 +1,5 @@
 #include  "Milestone.hpp"
+#include "Task.hpp"
 
 int main(void)
 {
@@ -12,5 +13,7 @@ int main(void)
 	
 	std::cout << "Milestone = " << mile1.getName()  << std::endl;
 	std::cout << "Milestone = " << mile1.getName() << std::endl;
+
+	Task task1(mile1,"Ir na escola");
     return (0);
 }
